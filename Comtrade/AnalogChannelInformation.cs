@@ -94,7 +94,7 @@ namespace Wisp.Comtrade
 			this.phase=phase;
 		}
 		
-		internal AnalogChannelInformation(string analogLine)
+		public AnalogChannelInformation(string analogLine)
 		{
 			var values=analogLine.Split(GlobalSettings.commaDelimiter);
 			
