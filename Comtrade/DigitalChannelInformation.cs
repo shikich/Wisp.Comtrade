@@ -23,7 +23,7 @@ namespace Wisp.Comtrade
 			this.phase=phase;
 		}
 		
-		internal DigitalChannelInformation(string digitalLine)
+		public DigitalChannelInformation(string digitalLine)
 		{
 			var values=digitalLine.Split(GlobalSettings.commaDelimiter);
 			
