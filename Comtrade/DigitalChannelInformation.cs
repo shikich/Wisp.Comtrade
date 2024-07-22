@@ -36,8 +36,15 @@ namespace Wisp.Comtrade
 				                                                   System.Globalization.CultureInfo.InvariantCulture));
 			}
 		}
-		
-		internal string ToCFGString()
+
+        public DigitalChannelInformation(string name, string phase, string circuitComponent)
+        {
+            this.name = name;
+            this.phase = phase;
+			this.circuitComponent=circuitComponent;
+        }
+
+        internal string ToCFGString()
 		{
 			return this.Index.ToString()+GlobalSettings.commaDelimiter+
 					this.name+GlobalSettings.commaDelimiter+

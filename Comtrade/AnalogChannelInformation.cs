@@ -116,8 +116,17 @@ namespace Wisp.Comtrade
 				this.isPrimary=false;
 			}						
 		}
-		
-		internal string ToCFGString()
+
+        public AnalogChannelInformation(string name, string phase, string units, double min, double max)
+        {
+            this.name = name;
+            this.phase = phase;
+            this.units = units;
+			this.min = min;
+			this.max = max;
+        }
+
+        internal string ToCFGString()
 		{
 			return this.Index.ToString()+GlobalSettings.commaDelimiter+
 					this.name+GlobalSettings.commaDelimiter+
